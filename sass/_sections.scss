@@ -1,0 +1,11 @@
+.banner {
+    background: url(/img/banner-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    .box {
+        position: relative;
+        padding: 32px;
+        background: $trans-black;
+    }
+}

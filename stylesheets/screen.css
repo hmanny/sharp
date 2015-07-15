@@ -67,9 +67,123 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url("/fonts/fonts/Roboto-Regular-webfont.eot");
+  src: url("/fonts/fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/fonts/Roboto-Regular-webfont.woff") format("woff"), url("/fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("/fonts/Roboto-Regular-webfont.svg#RobotoRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoItalic';
+  src: url("/fonts/Roboto-Italic-webfont.eot");
+  src: url("/fonts/Roboto-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-Italic-webfont.woff") format("woff"), url("/fonts/Roboto-Italic-webfont.ttf") format("truetype"), url("/fonts/Roboto-Italic-webfont.svg#RobotoItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoBold';
+  src: url("/fonts/Roboto-Bold-webfont.eot");
+  src: url("/fonts/Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-Bold-webfont.woff") format("woff"), url("/fonts/Roboto-Bold-webfont.ttf") format("truetype"), url("/fonts/Roboto-Bold-webfont.svg#RobotoBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoBoldItalic';
+  src: url("/fonts/Roboto-BoldItalic-webfont.eot");
+  src: url("/fonts/Roboto-BoldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-BoldItalic-webfont.woff") format("woff"), url("/fonts/Roboto-BoldItalic-webfont.ttf") format("truetype"), url("/fonts/Roboto-BoldItalic-webfont.svg#RobotoBoldItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoCondensed';
+  src: url("/fonts/RobotoCondensed-Regular.eot");
+  src: url("/fonts/RobotoCondensed-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/RobotoCondensed-Regular.woff") format("woff"), url("/fonts/RobotoCondensed-Regular.ttf") format("truetype"), url("/fonts/RobotoCondensed-Regular.svg#RobotoCondensed") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoCondensedItalic';
+  src: url("/fonts/Roboto-CondensedItalic-webfont.eot");
+  src: url("/fonts/Roboto-CondensedItalic-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-CondensedItalic-webfont.woff") format("woff"), url("/fonts/Roboto-CondensedItalic-webfont.ttf") format("truetype"), url("/fonts/Roboto-CondensedItalic-webfont.svg#RobotoCondensedItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoBoldCondensed';
+  src: url("/fonts/Roboto-BoldCondensed-webfont.eot");
+  src: url("/fonts/Roboto-BoldCondensed-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-BoldCondensed-webfont.woff") format("woff"), url("/fonts/Roboto-BoldCondensed-webfont.ttf") format("truetype"), url("/fonts/Roboto-BoldCondensed-webfont.svg#RobotoBoldCondensed") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoBoldCondensedItalic';
+  src: url("/fonts/Roboto-BoldCondensedItalic-webfont.eot");
+  src: url("/fonts/Roboto-BoldCondensedItalic-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-BoldCondensedItalic-webfont.woff") format("woff"), url("/fonts/Roboto-BoldCondensedItalic-webfont.ttf") format("truetype"), url("/fonts/Roboto-BoldCondensedItalic-webfont.svg#RobotoBoldCondensedItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoThin';
+  src: url("/fonts/Roboto-Thin-webfont.eot");
+  src: url("/fonts/Roboto-Thin-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-Thin-webfont.woff") format("woff"), url("/fonts/Roboto-Thin-webfont.ttf") format("truetype"), url("/fonts/Roboto-Thin-webfont.svg#RobotoThin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoThinItalic';
+  src: url("/fonts/Roboto-ThinItalic-webfont.eot");
+  src: url("/fonts/Roboto-ThinItalic-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-ThinItalic-webfont.woff") format("woff"), url("/fonts/Roboto-ThinItalic-webfont.ttf") format("truetype"), url("/fonts/Roboto-ThinItalic-webfont.svg#RobotoThinItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoLight';
+  src: url("/fonts/Roboto-Light-webfont.eot");
+  src: url("/fonts/Roboto-Light-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-Light-webfont.woff") format("woff"), url("/fonts/Roboto-Light-webfont.ttf") format("truetype"), url("/fonts/Roboto-Light-webfont.svg#RobotoLight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoLightItalic';
+  src: url("/fonts/Roboto-LightItalic-webfont.eot");
+  src: url("/fonts/Roboto-LightItalic-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-LightItalic-webfont.woff") format("woff"), url("/fonts/Roboto-LightItalic-webfont.ttf") format("truetype"), url("/fonts/Roboto-LightItalic-webfont.svg#RobotoLightItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoMedium';
+  src: url("/fonts/Roboto-Medium-webfont.eot");
+  src: url("/fonts/Roboto-Medium-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-Medium-webfont.woff") format("woff"), url("/fonts/Roboto-Medium-webfont.ttf") format("truetype"), url("/fonts/Roboto-Medium-webfont.svg#RobotoMedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoMediumItalic';
+  src: url("/fonts/Roboto-MediumItalic-webfont.eot");
+  src: url("/fonts/Roboto-MediumItalic-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-MediumItalic-webfont.woff") format("woff"), url("/fonts/Roboto-MediumItalic-webfont.ttf") format("truetype"), url("/fonts/Roboto-MediumItalic-webfont.svg#RobotoMediumItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoBlack';
+  src: url("/fonts/Roboto-Black-webfont.eot");
+  src: url("/fonts/Roboto-Black-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-Black-webfont.woff") format("woff"), url("/fonts/Roboto-Black-webfont.ttf") format("truetype"), url("/fonts/Roboto-Black-webfont.svg#RobotoBlack") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoBlackItalic';
+  src: url("/fonts/Roboto-BlackItalic-webfont.eot");
+  src: url("/fonts/Roboto-BlackItalic-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-BlackItalic-webfont.woff") format("woff"), url("/fonts/Roboto-BlackItalic-webfont.ttf") format("truetype"), url("/fonts/Roboto-BlackItalic-webfont.svg#RobotoBlackItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*COLOURS*/
+/*FONTS*/
 /* line 8, ../sass/_grid.scss */
 .container {
-  max-width: 1043px;
+  max-width: 1199px;
   margin: 0px auto;
   padding: 0 12.5px 0 12.5px;
   display: block;
@@ -83,10 +197,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media (min-width: 960px) {
   /* line 30, ../sass/_grid.scss */
   .grid1 {
-    width: 5.8907%;
+    width: 6.16514%;
     display: inline-block;
     vertical-align: top;
-    margin-left: 2.30105%;
+    margin-left: 2.00167%;
     margin-bottom: 0;
   }
 }
@@ -99,10 +213,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media (min-width: 960px) {
   /* line 30, ../sass/_grid.scss */
   .grid2 {
-    width: 14.08245%;
+    width: 14.33194%;
     display: inline-block;
     vertical-align: top;
-    margin-left: 2.30105%;
+    margin-left: 2.00167%;
     margin-bottom: 0;
   }
 }
@@ -115,10 +229,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media (min-width: 960px) {
   /* line 30, ../sass/_grid.scss */
   .grid3 {
-    width: 22.27421%;
+    width: 22.49875%;
     display: inline-block;
     vertical-align: top;
-    margin-left: 2.30105%;
+    margin-left: 2.00167%;
     margin-bottom: 0;
   }
 }
@@ -131,10 +245,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media (min-width: 960px) {
   /* line 30, ../sass/_grid.scss */
   .grid4 {
-    width: 30.46596%;
+    width: 30.66555%;
     display: inline-block;
     vertical-align: top;
-    margin-left: 2.30105%;
+    margin-left: 2.00167%;
     margin-bottom: 0;
   }
 }
@@ -147,10 +261,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media (min-width: 960px) {
   /* line 30, ../sass/_grid.scss */
   .grid5 {
-    width: 38.65772%;
+    width: 38.83236%;
     display: inline-block;
     vertical-align: top;
-    margin-left: 2.30105%;
+    margin-left: 2.00167%;
     margin-bottom: 0;
   }
 }
@@ -163,10 +277,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media (min-width: 960px) {
   /* line 30, ../sass/_grid.scss */
   .grid6 {
-    width: 46.84947%;
+    width: 46.99917%;
     display: inline-block;
     vertical-align: top;
-    margin-left: 2.30105%;
+    margin-left: 2.00167%;
     margin-bottom: 0;
   }
 }
@@ -179,10 +293,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media (min-width: 960px) {
   /* line 30, ../sass/_grid.scss */
   .grid7 {
-    width: 55.04123%;
+    width: 55.16597%;
     display: inline-block;
     vertical-align: top;
-    margin-left: 2.30105%;
+    margin-left: 2.00167%;
     margin-bottom: 0;
   }
 }
@@ -195,10 +309,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media (min-width: 960px) {
   /* line 30, ../sass/_grid.scss */
   .grid8 {
-    width: 63.23298%;
+    width: 63.33278%;
     display: inline-block;
     vertical-align: top;
-    margin-left: 2.30105%;
+    margin-left: 2.00167%;
     margin-bottom: 0;
   }
 }
@@ -211,10 +325,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media (min-width: 960px) {
   /* line 30, ../sass/_grid.scss */
   .grid9 {
-    width: 71.42474%;
+    width: 71.49958%;
     display: inline-block;
     vertical-align: top;
-    margin-left: 2.30105%;
+    margin-left: 2.00167%;
     margin-bottom: 0;
   }
 }
@@ -227,10 +341,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media (min-width: 960px) {
   /* line 30, ../sass/_grid.scss */
   .grid10 {
-    width: 79.61649%;
+    width: 79.66639%;
     display: inline-block;
     vertical-align: top;
-    margin-left: 2.30105%;
+    margin-left: 2.00167%;
     margin-bottom: 0;
   }
 }
@@ -243,10 +357,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media (min-width: 960px) {
   /* line 30, ../sass/_grid.scss */
   .grid11 {
-    width: 87.80825%;
+    width: 87.83319%;
     display: inline-block;
     vertical-align: top;
-    margin-left: 2.30105%;
+    margin-left: 2.00167%;
     margin-bottom: 0;
   }
 }
@@ -254,4 +368,76 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 50, ../sass/_grid.scss */
 .grid:first-child {
   margin-left: 0;
+}
+
+/* line 1, ../sass/_full-screen.scss */
+.full-screen {
+  height: 100vh;
+  width: 100vw;
+}
+
+/** 
+ * iPad with portrait orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  /* line 11, ../sass/_full-screen.scss */
+  .full-screen {
+    height: 1024px;
+  }
+}
+/** 
+ * iPad with landscape orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
+  /* line 21, ../sass/_full-screen.scss */
+  .full-screen {
+    height: 768px;
+  }
+}
+/**
+ * iPhone 5
+ * You can also target devices with aspect ratio.
+ */
+@media screen and (device-aspect-ratio: 40 / 71) {
+  /* line 32, ../sass/_full-screen.scss */
+  .full-screen {
+    height: 500px;
+  }
+}
+/* line 1, ../sass/_general.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 4, ../sass/_general.scss */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* line 9, ../sass/_general.scss */
+body {
+  color: white;
+  line-height: 1.6;
+}
+/* line 12, ../sass/_general.scss */
+body h1 {
+  font-family: "RobotoCondensed", sans-serif;
+  font-size: 29px;
+  text-transform: uppercase;
+}
+
+/* line 1, ../sass/_sections.scss */
+.banner {
+  background: url(/img/banner-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+/* line 6, ../sass/_sections.scss */
+.banner .box {
+  position: relative;
+  padding: 32px;
+  background: rgba(0, 0, 0, 0.7);
 }

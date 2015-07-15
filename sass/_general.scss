@@ -1,0 +1,17 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    color: white;
+    line-height: 1.6;
+    h1 {
+        font-family: $condensed;
+        font-size: 29px;
+        text-transform: uppercase;
+    }
+}
