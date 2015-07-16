@@ -1,0 +1,70 @@
+nav {
+    &.desk {
+        ul {
+            padding: 55px 0 40px;
+            text-align: center;
+            display: inline-block;
+            margin-left: 10px;
+            li {
+                text-align: left;
+                display: inline-block;
+                padding: 0;
+                position: relative;
+                @include breakpoint($large) {
+                    padding: 0;
+                }
+                &:before {
+                    content: "|";
+                    padding-right: 1px;
+                    font-size: 13px;
+                    position: relative;
+                    top: -1px;
+                    letter-spacing: 0.1em;
+                }
+                &:first-child:before {
+                    content: "";
+                }
+                &:first-child a:after {
+                    left: 1px;
+                }
+                a {
+                    color: $white;
+                    font-family: $thin;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-size: 11px;
+                    &:after {
+                        display: block;
+                        height: 2px;
+                        position: relative;
+                        left: 6px;
+                        width: 90%;
+                        top: 5px;
+                        background-color: $gold;
+                        content: "";
+                        transform: scaleX(0);
+                        -webkit-transform: scaleX(0);
+                        transition: all 0.3s ease-in-out 0s;
+                        -webkit-transition: all 0.3s ease-in-out 0s;
+                    }
+                    &:hover:after {
+                        transform: scaleX(1);
+                        -webkit-transform: scaleX(1);
+                    }
+                }
+                .linkActive:after {
+                    transform: scaleX(1);
+                    -webkit-transform: scaleX(1);
+                }
+            }
+        }
+        li:first-child {
+            padding-left: 0;
+        }
+        li:last-child {
+            @include breakpoint($large) {
+                padding-right: 0;
+            }
+        }
+    }
+}

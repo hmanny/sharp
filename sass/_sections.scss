@@ -1,11 +1,153 @@
+header {
+    background: $trans-black;
+    z-index: 800;
+    position: absolute;
+    width: 100%;
+    .logo {
+        padding: 30px 0 50px;
+    }
+    .expert {
+        position: relative;
+        text-align: right;
+        padding-top: 30px;
+        line-height: 1.4;
+        .inner-expert {
+            position: absolute;
+            right: 0;
+            width: 200px;
+            div:first-child {
+                font-family: $thin;
+                font-size: 16px;
+                span {
+                    font-family: $med-text;
+                    padding-right: 5px;
+                }
+            }
+            div:nth-child(2) {
+                font-family: $med-text;
+                font-size: 22px;
+            }
+            div:nth-child(3) {
+                font-family: $med-text;
+                padding: 6px 20px;
+                text-align: center;
+                margin-top: 8px;
+                border-top: 2px solid $gold;
+                border-bottom: 2px solid $gold;
+                font-size: 14px;
+                width: 180px;
+                position: relative;
+                left: 20px;
+                a {
+                    color: $white;
+                    text-decoration: none;
+                    font-family: $thin;
+                }
+            }
+        }
+    }
+}
 .banner {
     background: url(/img/banner-bg.jpg);
     background-size: cover;
-    background-position: center center;
+    background-position: center top;
     position: relative;
     .box {
-        position: relative;
-        padding: 32px;
+        position: absolute;
+        padding: 22px;
+        bottom: 140px;
         background: $trans-black;
+        width: 670px;
+        max-width: 100%;
+        box-shadow: 0px 0px 2px $trans-black;
+    }
+}
+.sectors {
+    padding: 43px 0;
+    background-color: $light-grey;
+    background-image: url(/img/overlay.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    .box {
+        padding: 100px 77px 65px 30px;
+        box-shadow: 0px 0px 2px $trans-black;
+        &:first-child {
+            background: url(/img/pleased.jpg);
+            background-size: cover;
+        }
+        &:nth-child(2) {
+            background: url(/img/writing.jpg);
+            background-size: cover;
+        }
+    }
+}
+.news {
+    padding: 43px 0;
+    background-color: $gold;
+    #displayBlogStory {
+        @extend .grid4;
+        text-align: center;
+        border: 1px solid $white;
+        background: #111;
+        font-family: $thin;
+        &:first-child {
+            background: #11161c
+        }
+        .blogTitle {
+            margin: 20px 0;
+            font-size: 17px;
+            font-family: $med-text;
+            a {
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+        .blogBody {
+            padding: 0 20px;
+            font-size: 14px;
+            line-height: 1.6;
+            p {
+                margin-top: 20px;
+            }
+            a {
+                font-size: 15px;
+                color: white;
+                text-decoration: none;
+                border-bottom: 1px solid white;
+                transition: color 1s;
+                &:hover {
+                    color: $gold;
+                    border-bottom-color: $gold;
+                }
+            }
+        }
+        img.full {
+            width: 100%;
+        }
+    }
+    .twitter-box {
+        @extend #displayBlogStory;
+        background: $twit-blue;
+        .tweet {
+            @extend .blogBody;
+        }
+        .twit-logo {
+            margin: 12px 0;
+        }
+        .interact a {
+            margin: 0 10px;
+            font-size: 15px;
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid white;
+            transition: color 1s;
+            font-family: $med-text;
+            &:hover {
+                color: $gold;
+                border-bottom-color: $gold;
+            }
+        }
     }
 }

@@ -183,9 +183,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*FONTS*/
 /* line 8, ../sass/_grid.scss */
 .container {
-  max-width: 1199px;
+  max-width: 1188px;
   margin: 0px auto;
-  padding: 0 12.5px 0 12.5px;
+  padding: 0 12px 0 12px;
   display: block;
 }
 
@@ -197,10 +197,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media (min-width: 960px) {
   /* line 30, ../sass/_grid.scss */
   .grid1 {
-    width: 6.16514%;
+    width: 6.22222%;
     display: inline-block;
     vertical-align: top;
-    margin-left: 2.00167%;
+    margin-left: 1.93939%;
     margin-bottom: 0;
   }
 }
@@ -213,10 +213,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media (min-width: 960px) {
   /* line 30, ../sass/_grid.scss */
   .grid2 {
-    width: 14.33194%;
+    width: 14.38384%;
     display: inline-block;
     vertical-align: top;
-    margin-left: 2.00167%;
+    margin-left: 1.93939%;
     margin-bottom: 0;
   }
 }
@@ -229,26 +229,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media (min-width: 960px) {
   /* line 30, ../sass/_grid.scss */
   .grid3 {
-    width: 22.49875%;
+    width: 22.54545%;
     display: inline-block;
     vertical-align: top;
-    margin-left: 2.00167%;
+    margin-left: 1.93939%;
     margin-bottom: 0;
   }
 }
 
 /* line 30, ../sass/_grid.scss */
-.grid4 {
+.grid4, .news #displayBlogStory, .news .twitter-box {
   width: 100%;
   margin-bottom: 50px;
 }
 @media (min-width: 960px) {
   /* line 30, ../sass/_grid.scss */
-  .grid4 {
-    width: 30.66555%;
+  .grid4, .news #displayBlogStory, .news .twitter-box {
+    width: 30.70707%;
     display: inline-block;
     vertical-align: top;
-    margin-left: 2.00167%;
+    margin-left: 1.93939%;
     margin-bottom: 0;
   }
 }
@@ -261,10 +261,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media (min-width: 960px) {
   /* line 30, ../sass/_grid.scss */
   .grid5 {
-    width: 38.83236%;
+    width: 38.86869%;
     display: inline-block;
     vertical-align: top;
-    margin-left: 2.00167%;
+    margin-left: 1.93939%;
     margin-bottom: 0;
   }
 }
@@ -277,10 +277,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media (min-width: 960px) {
   /* line 30, ../sass/_grid.scss */
   .grid6 {
-    width: 46.99917%;
+    width: 47.0303%;
     display: inline-block;
     vertical-align: top;
-    margin-left: 2.00167%;
+    margin-left: 1.93939%;
     margin-bottom: 0;
   }
 }
@@ -293,10 +293,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media (min-width: 960px) {
   /* line 30, ../sass/_grid.scss */
   .grid7 {
-    width: 55.16597%;
+    width: 55.19192%;
     display: inline-block;
     vertical-align: top;
-    margin-left: 2.00167%;
+    margin-left: 1.93939%;
     margin-bottom: 0;
   }
 }
@@ -309,10 +309,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media (min-width: 960px) {
   /* line 30, ../sass/_grid.scss */
   .grid8 {
-    width: 63.33278%;
+    width: 63.35354%;
     display: inline-block;
     vertical-align: top;
-    margin-left: 2.00167%;
+    margin-left: 1.93939%;
     margin-bottom: 0;
   }
 }
@@ -325,10 +325,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media (min-width: 960px) {
   /* line 30, ../sass/_grid.scss */
   .grid9 {
-    width: 71.49958%;
+    width: 71.51515%;
     display: inline-block;
     vertical-align: top;
-    margin-left: 2.00167%;
+    margin-left: 1.93939%;
     margin-bottom: 0;
   }
 }
@@ -341,10 +341,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media (min-width: 960px) {
   /* line 30, ../sass/_grid.scss */
   .grid10 {
-    width: 79.66639%;
+    width: 79.67677%;
     display: inline-block;
     vertical-align: top;
-    margin-left: 2.00167%;
+    margin-left: 1.93939%;
     margin-bottom: 0;
   }
 }
@@ -357,10 +357,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media (min-width: 960px) {
   /* line 30, ../sass/_grid.scss */
   .grid11 {
-    width: 87.83319%;
+    width: 87.83838%;
     display: inline-block;
     vertical-align: top;
-    margin-left: 2.00167%;
+    margin-left: 1.93939%;
     margin-bottom: 0;
   }
 }
@@ -372,15 +372,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 1, ../sass/_full-screen.scss */
 .full-screen {
-  height: 100vh;
-  width: 100vw;
+  max-height: 100vh;
+  height: 737px;
+  width: 100%;
 }
 
 /** 
  * iPad with portrait orientation.
  */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
-  /* line 11, ../sass/_full-screen.scss */
+  /* line 12, ../sass/_full-screen.scss */
   .full-screen {
     height: 1024px;
   }
@@ -389,7 +390,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
  * iPad with landscape orientation.
  */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
-  /* line 21, ../sass/_full-screen.scss */
+  /* line 22, ../sass/_full-screen.scss */
   .full-screen {
     height: 768px;
   }
@@ -399,7 +400,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
  * You can also target devices with aspect ratio.
  */
 @media screen and (device-aspect-ratio: 40 / 71) {
-  /* line 32, ../sass/_full-screen.scss */
+  /* line 33, ../sass/_full-screen.scss */
   .full-screen {
     height: 500px;
   }
@@ -419,25 +420,305 @@ html {
 /* line 9, ../sass/_general.scss */
 body {
   color: white;
-  line-height: 1.6;
+  line-height: 1.2;
 }
 /* line 12, ../sass/_general.scss */
 body h1 {
   font-family: "RobotoCondensed", sans-serif;
   font-size: 29px;
   text-transform: uppercase;
+  margin-bottom: 25px;
+}
+/* line 18, ../sass/_general.scss */
+body p {
+  margin-bottom: 25px;
+  font-family: "RobotoThin", sans-serif;
+  font-size: 13px;
+}
+/* line 23, ../sass/_general.scss */
+body p.bold {
+  font-family: "RobotoMedium", sans-serif;
+  font-size: 17px;
+}
+/* line 27, ../sass/_general.scss */
+body button {
+  padding: 15px 55px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid white;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  font-family: "RobotoThin", sans-serif;
+  transition: background-color 1s;
+  -webkit-transition: background-color 1s;
+}
+/* line 39, ../sass/_general.scss */
+body button:hover {
+  cursor: pointer;
+  background: #674812;
+  border: 1px solid #674812;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* line 3, ../sass/_nav.scss */
+nav.desk ul {
+  padding: 55px 0 40px;
+  text-align: center;
+  display: inline-block;
+  margin-left: 10px;
+}
+/* line 8, ../sass/_nav.scss */
+nav.desk ul li {
+  text-align: left;
+  display: inline-block;
+  padding: 0;
+  position: relative;
+}
+@media (min-width: 1025px) {
+  /* line 8, ../sass/_nav.scss */
+  nav.desk ul li {
+    padding: 0;
+  }
+}
+/* line 16, ../sass/_nav.scss */
+nav.desk ul li:before {
+  content: "|";
+  padding-right: 1px;
+  font-size: 13px;
+  position: relative;
+  top: -1px;
+  letter-spacing: 0.1em;
+}
+/* line 24, ../sass/_nav.scss */
+nav.desk ul li:first-child:before {
+  content: "";
+}
+/* line 27, ../sass/_nav.scss */
+nav.desk ul li:first-child a:after {
+  left: 1px;
+}
+/* line 30, ../sass/_nav.scss */
+nav.desk ul li a {
+  color: #fff;
+  font-family: "RobotoThin", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 11px;
+}
+/* line 36, ../sass/_nav.scss */
+nav.desk ul li a:after {
+  display: block;
+  height: 2px;
+  position: relative;
+  left: 6px;
+  width: 90%;
+  top: 5px;
+  background-color: #674812;
+  content: "";
+  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+}
+/* line 50, ../sass/_nav.scss */
+nav.desk ul li a:hover:after {
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+}
+/* line 55, ../sass/_nav.scss */
+nav.desk ul li .linkActive:after {
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+}
+/* line 61, ../sass/_nav.scss */
+nav.desk li:first-child {
+  padding-left: 0;
+}
+@media (min-width: 1025px) {
+  /* line 64, ../sass/_nav.scss */
+  nav.desk li:last-child {
+    padding-right: 0;
+  }
 }
 
 /* line 1, ../sass/_sections.scss */
+header {
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 800;
+  position: absolute;
+  width: 100%;
+}
+/* line 6, ../sass/_sections.scss */
+header .logo {
+  padding: 30px 0 50px;
+}
+/* line 9, ../sass/_sections.scss */
+header .expert {
+  position: relative;
+  text-align: right;
+  padding-top: 30px;
+  line-height: 1.4;
+}
+/* line 14, ../sass/_sections.scss */
+header .expert .inner-expert {
+  position: absolute;
+  right: 0;
+  width: 200px;
+}
+/* line 18, ../sass/_sections.scss */
+header .expert .inner-expert div:first-child {
+  font-family: "RobotoThin", sans-serif;
+  font-size: 16px;
+}
+/* line 21, ../sass/_sections.scss */
+header .expert .inner-expert div:first-child span {
+  font-family: "RobotoMedium", sans-serif;
+  padding-right: 5px;
+}
+/* line 26, ../sass/_sections.scss */
+header .expert .inner-expert div:nth-child(2) {
+  font-family: "RobotoMedium", sans-serif;
+  font-size: 22px;
+}
+/* line 30, ../sass/_sections.scss */
+header .expert .inner-expert div:nth-child(3) {
+  font-family: "RobotoMedium", sans-serif;
+  padding: 6px 20px;
+  text-align: center;
+  margin-top: 8px;
+  border-top: 2px solid #674812;
+  border-bottom: 2px solid #674812;
+  font-size: 14px;
+  width: 180px;
+  position: relative;
+  left: 20px;
+}
+/* line 41, ../sass/_sections.scss */
+header .expert .inner-expert div:nth-child(3) a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "RobotoThin", sans-serif;
+}
+
+/* line 50, ../sass/_sections.scss */
 .banner {
   background: url(/img/banner-bg.jpg);
   background-size: cover;
-  background-position: center center;
+  background-position: center top;
   position: relative;
 }
-/* line 6, ../sass/_sections.scss */
+/* line 55, ../sass/_sections.scss */
 .banner .box {
-  position: relative;
-  padding: 32px;
-  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  padding: 22px;
+  bottom: 140px;
+  background: rgba(0, 0, 0, 0.8);
+  width: 670px;
+  max-width: 100%;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* line 65, ../sass/_sections.scss */
+.sectors {
+  padding: 43px 0;
+  background-color: #dcd9d9;
+  background-image: url(/img/overlay.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* line 72, ../sass/_sections.scss */
+.sectors .box {
+  padding: 100px 77px 65px 30px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
+}
+/* line 75, ../sass/_sections.scss */
+.sectors .box:first-child {
+  background: url(/img/pleased.jpg);
+  background-size: cover;
+}
+/* line 79, ../sass/_sections.scss */
+.sectors .box:nth-child(2) {
+  background: url(/img/writing.jpg);
+  background-size: cover;
+}
+
+/* line 85, ../sass/_sections.scss */
+.news {
+  padding: 43px 0;
+  background-color: #674812;
+}
+/* line 88, ../sass/_sections.scss */
+.news #displayBlogStory, .news .twitter-box {
+  text-align: center;
+  border: 1px solid #fff;
+  background: #111;
+  font-family: "RobotoThin", sans-serif;
+}
+/* line 94, ../sass/_sections.scss */
+.news #displayBlogStory:first-child, .news .twitter-box:first-child {
+  background: #11161c;
+}
+/* line 97, ../sass/_sections.scss */
+.news #displayBlogStory .blogTitle, .news .twitter-box .blogTitle {
+  margin: 20px 0;
+  font-size: 17px;
+  font-family: "RobotoMedium", sans-serif;
+}
+/* line 101, ../sass/_sections.scss */
+.news #displayBlogStory .blogTitle a, .news .twitter-box .blogTitle a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* line 107, ../sass/_sections.scss */
+.news #displayBlogStory .blogBody, .news .twitter-box .blogBody, .news #displayBlogStory .twitter-box .tweet, .news .twitter-box #displayBlogStory .tweet, .news .twitter-box .tweet {
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+/* line 111, ../sass/_sections.scss */
+.news #displayBlogStory .blogBody p, .news .twitter-box .blogBody p, .news #displayBlogStory .twitter-box .tweet p, .news .twitter-box #displayBlogStory .tweet p, .news .twitter-box .tweet p {
+  margin-top: 20px;
+}
+/* line 114, ../sass/_sections.scss */
+.news #displayBlogStory .blogBody a, .news .twitter-box .blogBody a, .news #displayBlogStory .twitter-box .tweet a, .news .twitter-box #displayBlogStory .tweet a, .news .twitter-box .tweet a {
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  transition: color 1s;
+}
+/* line 120, ../sass/_sections.scss */
+.news #displayBlogStory .blogBody a:hover, .news .twitter-box .blogBody a:hover, .news #displayBlogStory .twitter-box .tweet a:hover, .news .twitter-box #displayBlogStory .tweet a:hover, .news .twitter-box .tweet a:hover {
+  color: #674812;
+  border-bottom-color: #674812;
+}
+/* line 126, ../sass/_sections.scss */
+.news #displayBlogStory img.full, .news .twitter-box img.full {
+  width: 100%;
+}
+/* line 130, ../sass/_sections.scss */
+.news .twitter-box {
+  background: #0a6a8c;
+}
+/* line 136, ../sass/_sections.scss */
+.news .twitter-box .twit-logo {
+  margin: 12px 0;
+}
+/* line 139, ../sass/_sections.scss */
+.news .twitter-box .interact a {
+  margin: 0 10px;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  transition: color 1s;
+  font-family: "RobotoMedium", sans-serif;
+}
+/* line 147, ../sass/_sections.scss */
+.news .twitter-box .interact a:hover {
+  color: #674812;
+  border-bottom-color: #674812;
 }

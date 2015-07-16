@@ -8,10 +8,38 @@ html {
 }
 body {
     color: white;
-    line-height: 1.6;
+    line-height: 1.2;
     h1 {
         font-family: $condensed;
         font-size: 29px;
         text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+    p {
+        margin-bottom: 25px;
+        font-family: $thin;
+        font-size: 13px;
+    }
+    p.bold {
+        font-family: $med-text;
+        font-size: 17px;
+    }
+    button {
+        padding: 15px 55px;
+        text-align: center;
+        background: $trans-black;
+        border: 1px solid white;
+        outline: none;
+        color: white;
+        font-size: 16px;
+        font-family: $thin;
+        transition: background-color 1s;
+        -webkit-transition: background-color 1s;
+    }
+    button:hover {
+        cursor: pointer;
+        background: $gold;
+        border: 1px solid $gold;
+        box-shadow: 3px 3px 4px $trans-black;
     }
 }
