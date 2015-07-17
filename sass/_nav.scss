@@ -12,9 +12,8 @@
     display: none;
     @include breakpoint($larger) {
         display: inline-block;
-    } }
-
-
+    }
+}
 nav {
     &.desk {
         text-align: center;
@@ -102,7 +101,25 @@ nav {
                 }
             }
         }
-        
     }
-    
+    &.mob {
+        display: none;
+        position: fixed;
+        height: 100%;
+        z-index: 9000;
+        top: 0;
+        width: 100%;
+        background-color: $grey;
+        text-align: center;
+        padding-top: 70px;
+        font-family: $med-text;
+        line-height: 3;
+        font-size: 16px;
+        a {
+            color: $white;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
 }

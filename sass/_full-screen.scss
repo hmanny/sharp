@@ -1,6 +1,7 @@
 .full-screen {
     width: 100%;
-    height: 860px;
+    height: auto;
+    padding-bottom: 180px;
     @include breakpoint($med) {
         height: 737px;
         max-height: 100vh;
