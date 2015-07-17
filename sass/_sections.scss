@@ -3,14 +3,23 @@ header {
     z-index: 800;
     position: absolute;
     width: 100%;
+    text-align: left;
     .logo {
-        padding: 30px 0 50px;
+        padding: 20px 0 20px;
+        @include breakpoint($larger) {
+            padding: 30px 0 35px;
+        }
+        margin-bottom: 0;
     }
     .expert {
         position: relative;
         text-align: right;
-        padding-top: 30px;
+        padding-top: 20px;
         line-height: 1.4;
+        display: none;
+        @include breakpoint($larger) {
+            display: inline-block;
+        }
         .inner-expert {
             position: absolute;
             right: 0;
@@ -53,16 +62,34 @@ header {
     background-position: center top;
     position: relative;
     .box {
-        position: absolute;
+        position: relative;
         padding: 22px;
-        bottom: 140px;
+        top: 140px;
         background: $trans-black;
         width: 670px;
-        max-width: 100%;
+        @include breakpoint($smallerthan800) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        max-width: 95%;
         box-shadow: 0px 0px 2px $trans-black;
+        @include breakpoint($med) {
+            top: 160px;
+        }
+        @include breakpoint($med-large) {
+            top: 200px;
+            position: absolute;
+        }
+        @include breakpoint($large) {
+            top: 240px;
+        }
+        @include breakpoint($larger) {
+            top: 270px;
+        }
     }
 }
 .sectors {
+    text-align: left;
     padding: 43px 0;
     background-color: $light-grey;
     background-image: url(/img/overlay.png);
@@ -70,6 +97,11 @@ header {
     background-repeat: no-repeat;
     background-position: center center;
     .box {
+        max-width: 600px;
+         @include breakpoint($smallerthan800) {
+            margin-left: auto;
+            margin-right: auto;
+        }
         padding: 100px 77px 65px 30px;
         box-shadow: 0px 0px 2px $trans-black;
         &:first-child {
@@ -84,9 +116,16 @@ header {
 }
 .news {
     padding: 43px 0;
-    background-color: $gold;
+    background-color: $gold; // Old browsers
+    @include filter-gradient(#614310, #614310, vertical); // Old IE
+    @include background-image(linear-gradient(top, #614310 0%, #6e4d15 43%, #6e4d15 57%, #614310 100%));
     #displayBlogStory {
         @extend .grid4;
+        max-width: 450px;
+         @include breakpoint($smallerthan800) {
+            margin-left: auto;
+            margin-right: auto;
+        }
         text-align: center;
         border: 1px solid $white;
         background: #111;
@@ -149,5 +188,50 @@ header {
                 border-bottom-color: $gold;
             }
         }
+    }
+}
+footer {
+    .logo {
+        padding: 30px 0 30px;
+        margin-bottom: 0;
+    }
+    .top-footer {
+        background: $white;
+    }
+    .socialboxes {
+        margin-bottom: 0;
+        display: none;
+        @include breakpoint($med-large) {
+            display: inline-block;
+            width: 73%;
+        }
+        @include breakpoint($larger) {
+            width: 14.38%;
+        }
+        text-align: right;
+        padding: 40px 0;
+        margin: auto;
+        .socialbox {
+            text-align: center;
+            border: 1px solid $gold;
+            display: inline-block;
+            margin: 5px;
+            width: 40px;
+            height: 40px;
+            padding: 7px;
+            transition: background-color 0.6s;
+            -webkit-transition: background-color 0.6s;
+            &:hover {
+                background-color: $gold;
+            }
+        }
+    }
+    .copyright {
+        background: $grey;
+        color: $white;
+        text-align: right;
+        font-family: $thin;
+        font-size: 12px;
+        padding: 10px 0;
     }
 }

@@ -14,7 +14,9 @@ $width: ($column-width * $columns) + ($gutter * ($columns - 1));
         width: $width;
     }
     margin: 0px auto;
-    padding: 0 $padding 0 $padding;
+    padding: 0 30px;
+    @include breakpoint($med-large) {
+        padding: 0 $padding 0 $padding;}
     display: block;
 }
 // Define Individual Grid Classes

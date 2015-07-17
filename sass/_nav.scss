@@ -1,10 +1,30 @@
+.header-menu {
+    display: none;
+    @include breakpoint($large) {
+        width: 73%;
+        display: inline-block;
+    }
+    @include breakpoint($larger) {
+        width: 55.19%;
+    }
+}
+.footer-menu {
+    display: none;
+    @include breakpoint($larger) {
+        display: inline-block;
+    } }
+
+
 nav {
     &.desk {
+        text-align: center;
         ul {
-            padding: 55px 0 40px;
+            padding: 45px 0 40px;
+            @include breakpoint($larger) {
+                padding: 55px 0 30px;
+            }
             text-align: center;
             display: inline-block;
-            margin-left: 10px;
             li {
                 text-align: left;
                 display: inline-block;
@@ -32,7 +52,7 @@ nav {
                     font-family: $thin;
                     text-transform: uppercase;
                     text-decoration: none;
-                    font-size: 11px;
+                    font-size: 12px;
                     &:after {
                         display: block;
                         height: 2px;
@@ -67,4 +87,22 @@ nav {
             }
         }
     }
+    &.foot {
+        @extend .desk;
+        ul li {
+            &:before {
+                color: black;
+                font-family: "$med-text", sans-serif;
+            }
+            a {
+                color: black;
+                font-family: "$med-text", sans-serif;
+                &:after {
+                    display: none;
+                }
+            }
+        }
+        
+    }
+    
 }
