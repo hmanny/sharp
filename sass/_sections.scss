@@ -1,55 +1,48 @@
 header {
     background: $trans-black;
     z-index: 800;
-    position: absolute;
+    position: fixed;
+    @include breakpoint($large) {
+        position: absolute;
+    }
     width: 100%;
     text-align: left;
     .logo {
-        padding: 20px 0 20px;
+        max-width: 75%;
+        padding: 25px 0 20px;
         @include breakpoint($larger) {
-            padding: 30px 0 35px;
+            padding: 40px 0 35px;
         }
         margin-bottom: 0;
+        img {
+            @include breakpoint($smallerthan800) {
+                max-width: 100%;
+            }
+        }
     }
     .expert {
-        line-height: 1.4;
-        position: fixed;
-        top: 0;
-        display: block;
-        width: 100%;
-        text-align: center;
-        background: black;
-        padding-top: 2px;
-        padding-bottom: 10px;
-        margin-left: 0;
+        display: none;
         @include breakpoint($larger) {
             display: inline-block;
-            width: 14%;
-            text-align: right;
-            position: relative;
-            background: none;
-            padding-top: 20px;
-            left: 0;
         }
+        line-height: 1.4;
+        position: relative;
+        top: 0;
+        background: none;
+        padding-bottom: 10px;
+        margin-left: 0;
+        width: 14%;
+        text-align: right;
+        padding-top: 20px;
         .inner-expert {
-            right: 0;
-            width: 100%;
-            @include breakpoint($larger) {
-                width: 200px;
-                position: absolute;
-            }
+            width: 200px;
+            position: absolute;
             div {
-                display: inline-block;
-                @include breakpoint($larger) {
-                    width: auto;
-                    margin-left: 0;
-                }
+                width: auto;
+                margin-left: 0;
             }
             div:first-child {
-                display: none;
-                @include breakpoint($larger) {
-                    display: inline-block;
-                }
+                display: inline-block;
                 font-family: $thin;
                 font-size: 16px;
                 span {
@@ -71,9 +64,7 @@ header {
                 font-size: 14px;
                 width: 180px;
                 position: relative;
-                @include breakpoint($larger) {
-                    left: 20px;
-                }
+                left: 20px;
                 a {
                     color: $white;
                     text-decoration: none;

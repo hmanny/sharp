@@ -1,11 +1,11 @@
 .header-menu {
     display: none;
     @include breakpoint($large) {
-        width: 73%;
+        width: 72%;
         display: inline-block;
     }
     @include breakpoint($larger) {
-        width: 55.19%;
+        width: 58.19%;
     }
 }
 .footer-menu {
@@ -16,11 +16,11 @@
 }
 nav {
     &.desk {
-        text-align: center;
+        text-align: right;
         ul {
             padding: 45px 0 40px;
             @include breakpoint($larger) {
-                padding: 55px 0 30px;
+                padding: 65px 0 30px;
             }
             text-align: center;
             display: inline-block;
@@ -51,7 +51,7 @@ nav {
                     font-family: $thin;
                     text-transform: uppercase;
                     text-decoration: none;
-                    font-size: 12px;
+                    font-size: 13px;
                     &:after {
                         display: block;
                         height: 2px;
@@ -88,16 +88,41 @@ nav {
     }
     &.foot {
         @extend .desk;
-        ul li {
-            &:before {
-                color: black;
-                font-family: "$med-text", sans-serif;
+        ul {
+            padding: 56px 0 0;
+            li {
+                &:before {
+                    color: black;
+                    font-family: "$med-text", sans-serif;
+                }
+                a {
+                    color: black;
+                    font-family: "$med-text", sans-serif;
+                    font-size: 12px;
+                    &:after {
+                        display: none;
+                    }
+                }
             }
-            a {
-                color: black;
-                font-family: "$med-text", sans-serif;
-                &:after {
-                    display: none;
+        }
+    }
+    &.stuck {
+        @extend .desk;
+        display: none;
+        position: fixed;
+        background: black;
+        width: 100%;
+        z-index: 9500;
+        top: 0;
+        margin: 0;
+        text-align: center;
+        height: auto;
+        ul {
+            padding: 14px 0;
+            li {
+                padding: 0;
+                a {
+                    font-size: 13pt;
                 }
             }
         }
@@ -106,7 +131,7 @@ nav {
         display: none;
         position: fixed;
         height: 100%;
-        z-index: 9000;
+        z-index: 8999;
         top: 0;
         width: 100%;
         background-color: $grey;
@@ -121,5 +146,38 @@ nav {
             text-transform: uppercase;
             text-decoration: none;
         }
+    }
+}
+.menu_button {
+    position: fixed;
+    z-index: 9000;
+    display: inline-block;
+    @include breakpoint($large) {
+        display: none;
+    }
+    font-size: 50px;
+    color: $white;
+    background: none;
+    border: none;
+    outline: none;
+    transition: color 1s;
+    -webkit-transition: color 1s;
+    right: 10px;
+    top: 33px;
+    width: auto;
+    padding: 0;
+    &:hover {
+        background: none;
+        border: none;
+        box-shadow: none;
+        color: $gold;
+    }
+    &:before {
+        font-family: 'icomoon';
+        content: "\e600";
+    }
+    &.is-open:before {
+        font-family: 'icomoon';
+        content: "\e601";
     }
 }

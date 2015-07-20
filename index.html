@@ -42,6 +42,10 @@
                 </div>
             </div>
         </div>
+
+      
+
+
     </header>
     <div class="banner full-screen">
         <div class="container">
@@ -135,9 +139,23 @@ bespoke HMRC compliant payroll assistance</h1>
         <div class="top-footer">
             <div class="container">
                 <div class="logo grid3"><img src="/img/footerlogo.png"></div>
-                <div class="grid7 footer-menu">
-                    <nav class="foot">
-                        <ul class="menu" id="footerMenu">
+                
+                <div class="grid2 socialboxes">
+                    <a href="#" class="socialbox"><img src="img/fb.png"></a>
+                    <a href="#" class="socialbox"><img src="img/gtwit.png"></a>
+                    <a href="#" class="socialbox"><img src="img/in.png"></a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="container">
+                &copy; Sharp Umbrella 2015 | Web Design by The Smarter Web Company</div>
+        </div>
+
+                    <nav class="stuck">
+                        <ul class="menu" id="stickyMenu">
                             <li id="menu0" class="liLinkActive"><a class="linkActive" title="Home" href="#">Home</a>
                             </li>
                             <li id="menu1" class="nodiv"><a title="About" href="#">About</a>
@@ -156,20 +174,11 @@ bespoke HMRC compliant payroll assistance</h1>
                             </li>
                         </ul>
                     </nav>
-                </div>
-                <div class="grid2 socialboxes">
-                    <a href="#" class="socialbox"><img src="img/fb.png"></a>
-                    <a href="#" class="socialbox"><img src="img/gtwit.png"></a>
-                    <a href="#" class="socialbox"><img src="img/in.png"></a>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="copyright">
-            <div class="container">
-                &copy; Sharp Umbrella 2015 | Web Design by The Smarter Web Company</div>
-        </div>
+        
+        
+        
+        
+        
         <nav class="mob">
             <ul class="menu" id="headerMenu">
                 <li id="menu0" class="liLinkActive"><a class="linkActive" title="Home" href="#">Home</a>
@@ -190,7 +199,44 @@ bespoke HMRC compliant payroll assistance</h1>
                 </li>
             </ul>
         </nav>
+          <button class="menu_button"></button>
+        <script src="/js/jquery-1.11.3.min.js"></script>
+
+        <script>
+            hh = $('header').height() - $('nav').height() - 15;
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > hh) {
+            $(".stuck").show();
+        } else {
+            $(".stuck").hide();
+        }
+    });
+            
+            
+            
+            
+            var menu_up = false;
+            $(".menu_button").on("click", function() {
+                if (menu_up === false) {
+                    $(".mob").fadeIn(200);
+                    $(this).addClass("is-open");
+                    menu_up = true;
+                } else {
+                    $(".mob").fadeOut(200);
+                    $(this).removeClass("is-open");
+                    menu_up = false;
+                }
+            });
+            $(window).on('resize', function() {
+                $(".mob").fadeOut();
+                $(".menu_button").removeClass("is-open");
+                menu_up = false;
+            });
+
+        </script>
+
     </footer>
+    
 
 </body>
 
