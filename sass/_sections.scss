@@ -9,7 +9,7 @@ header {
     text-align: left;
     .logo {
         max-width: 75%;
-        padding: 25px 0 20px;
+        padding: 23px 0 15px;
         @include breakpoint($larger) {
             padding: 40px 0 35px;
         }
@@ -59,16 +59,21 @@ header {
                 padding: 6px 20px;
                 text-align: center;
                 margin-top: 8px;
-                border-top: 2px solid $gold;
-                border-bottom: 2px solid $gold;
+                border: 2px solid $gold;
                 font-size: 14px;
                 width: 180px;
                 position: relative;
                 left: 20px;
+                transition: background-color 0.5s;
                 a {
+                    width: 100%;
+                    display: block;
                     color: $white;
                     text-decoration: none;
                     font-family: $thin;
+                }
+                &:hover {
+                    background-color: $gold;
                 }
             }
         }
@@ -251,7 +256,34 @@ footer {
         color: $white;
         text-align: right;
         font-family: $thin;
-        font-size: 12px;
+        font-size: 14px;
         padding: 10px 0;
+    }
+    .mobile-expert {
+        @include breakpoint($larger) {
+            display: none;
+        }
+        position: fixed;
+        display: block;
+        width: 100%;
+        top: -40px;
+        padding-top: 5px;
+        color: white;
+        z-index: 9501;
+        text-align: center;
+        font-family: $med-text;
+        background: $gold;
+        text-transform: uppercase;
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        div {
+            display: inline-block;
+            padding-right: 10px;
+            &:last-child {
+                padding-right: 0;
+            }
+        }
     }
 }
